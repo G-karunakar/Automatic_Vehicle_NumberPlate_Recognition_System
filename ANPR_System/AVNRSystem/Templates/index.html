@@ -1,0 +1,62 @@
+<!-- myproject/myapp/templates/index.html -->
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+    <img style="cursor:not-allowed" src="D:\Desktop\main project\logo.png" alt="&#128664;&#129488;&#128679;">
+    <br>
+    <title>&#128664;&#129488; AVNPRS {{ G }}</title>
+    <link rel="icon" type="image/x icon" href="C:\Users\HOME\PycharmProjects\ANPR_System\ANPR_System\logo.png">
+    <style>
+        body{
+            text-align: center;
+            background-image:url("C:\Users\HOME\PycharmProjects\ANPR_System\AVNRSystem\logo.png");
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 title="The 'Automatic Vehicle Number Plate Recognition system' is a user-friendly web application designed to make it easy to get information from vehicle images. You can use the system to upload images or take pictures of vehicles. It then uses smart technology to read the information from the images, like license plate numbers and vehicle details. This way, you can quickly find out important facts about vehicles without typing anything.The system has been carefully built using modern technology and testing methods to make sure it works well. It's like having a helpful tool to get vehicle details instantly."; style="color:darkblue;cursor:help">AUTOMATIC VEHICLE NUMBER PLATE RECOGNITION SYSTEM</h1>
+    <h2 title="if you select the 'Browse' from the drop drown you have to brows the image from the system    OTHERWISE   if you select the 'Camera' from dropdown you have to place the system camera pointing to the vehicle numberplate" style="color:darkviolet;cursor:help">select the input type </h2>
+    <form method="post" action="{% url 'image' %}">
+        {% csrf_token %}
+        <label  for="process">Get image through :-</label>
+        <select style="cursor:pointer" id="process" name="image1">
+            <option style="cursor:pointer" value="Browse">Browse</option>
+            <option style="cursor:pointer" value="Camera">Camera</option>
+        </select>
+
+        <p title="this is the vehicle licence number">{{ a }} {{ G }} </p>
+
+
+
+        <br>
+        <input type="submit" style="width:100px;height:20px;text-align:center;border-radius:12px; background-color:#6600CC; color: white; border:None;cursor:pointer" value="obtain image">
+    </form>
+    <br>
+    <h2 title="we provide different types of information about the vehicle, select the type of information that you are searching for" style="color:darkviolet;cursor:help">vehicle information {{ x }} </h2>
+    <form style="cursor:pointer" method="post" action="{% url 'execute_process' %}">
+        {% csrf_token %}
+        <label for="information">Information type :-</label>
+        <select style="cursor:pointer" id="information" name="selected_process">
+            <option value="Process 1">Basic details</option>
+            <option value="Process 2">Apartment security check</option>
+            <option value="Process 3">Is thefted vehicle </option>
+            <option value="Process 4">fastrack details</option>
+            <option value="Process 5">service details</option>
+
+        </select>
+        <br>
+        <br>
+        <br>
+        <input type="submit"  style="width:{{ w }}px;height:{{ h }}px;text-align:center;border-radius:12px;background-color:{{ man }}; color: white; border: black;cursor:pointer" value="{{sub}}">
+        <br>
+        <br>
+        <a href="http://127.0.0.1:8000/">{{ krr}}</a>
+    </form>
+</body>
+</html>

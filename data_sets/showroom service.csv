@@ -1,0 +1,11 @@
+number,type,owner name,last service date,status of free service
+21BH3421AA,car,AAA,10-07-2022,still exist
+21BH0001AA,lory,BBB,25-09-2022,still exist
+MH12DE1433L,car,CCC,30-11-2022,still exist
+MH14DT8831,car,DDD,03-01-2023,still exist
+MH14BR6869,car,EEE,31-03-2023,still exist
+MH47AM5753,bick,FFF,25-09-2022,expired
+AP3ABOSS,car,HHH,10-07-2022,expired
+AP08V4444,car,III,11-11-2022,expired
+NW11771,car,MMM,25-09-2021,expired
+MH92QW5454,lory,NNN,25-09-2022,expired

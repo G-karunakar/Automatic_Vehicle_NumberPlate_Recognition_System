@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicle_details</title>
+    <p title="It looks like you've provided code for a Django web application that allows users to select an input type for a vehicle image and then choose the type of information they want from the vehicle image. The application then processes this information and displays the results. Here's a breakdown of the code you've provided:
+
+1. *index.html*: This is an HTML template for the home page of your web application. It contains two forms: one for selecting the input type (Browse or Camera) and another for selecting the type of information. The selected information is displayed on the page.
+
+2. *Views*: This Python code defines the views for your Django application. It includes functions for capturing images from the camera, recognizing text in images, processing CSV files, and rendering HTML templates.
+
+3. *image*: This view function handles the POST request when the user selects an input type (Browse or Camera). It captures an image from either the file system or a camera, performs text recognition using Tesseract OCR, and processes the recognized text. The results are displayed on the same page.
+
+4. *execute_process*: This view function handles the POST request when the user selects the type of information they want. It calls the `DataFetch` function to fetch information from CSV files based on the recognized text and selected process. The results are displayed on a separate results page.
+
+5. *results.html*: This is an HTML template for displaying the results of the selected process. It includes placeholders for displaying information fetched from CSV files.
+
+6. *Urls*: This file defines the URL patterns for your Django application, specifying which views should be associated with which URLs.
+
+Overall, your Django application appears to be designed to capture vehicle information from images, recognize text in those images, and fetch additional information from CSV files based on the recognized text and user's selections. It's a useful application for processing vehicle-relateddata.
+" style="cursor:help;text-align:right">
+ <b> help &#10067; </b></p>
+    <style>
+        body{text-align: center}
+    </style>
+</head>
+
+<body>
+    <h1 style="color:blue">Display Variables {{x}}</h1>
+    <ul>
+        <h2>{{ a }}{{ c1 }}</h2>
+        <h2>{{ b }}{{ c2 }}</h2>
+        <h2>{{ c }}{{ c3 }}</h2>
+        <h2>{{ d }}{{ c4 }}</h2>
+        <h2>{{ e }}{{ c5 }}</h2>
+
+    </ul>
+<a  href="http://127.0.0.1:8000/" style="">&#127969;</a>
+</body>
+</html>
